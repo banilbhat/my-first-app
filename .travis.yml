@@ -17,7 +17,7 @@ deploy:
     bucket_path: "docker"
 
     on:
-      branch: main
+      branch: "main"
 
   - provider: elasticbeanstalk
     region: ap-south-1
@@ -28,8 +28,8 @@ deploy:
     secret_access_key: $AWS_SECRET_KEY
 
     bucket_name: "my-first-app-bucket"
-  
+
     bucket_path: "docker"
 
     on:
-      branch: testing 
+      branch: testing
